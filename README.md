@@ -4,3 +4,4 @@ Search source code for the "^" character to find these lines
 Edit function int Get_temperature host and streamId with URL of weather source. 
 Edit line 79 thereabouts global variables IPAddress timeServer for your time server
 Edit lines 70-71 with your ssid and password
+dst.cpp is for US daylight saving time
