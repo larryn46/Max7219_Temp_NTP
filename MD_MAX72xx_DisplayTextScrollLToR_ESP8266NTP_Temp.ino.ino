@@ -7,7 +7,7 @@
 #include <TimeLib.h> 
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
-#define XOUT
+
 // Turn on debug statements to the serial output
 #define  DEBUG  1
 
@@ -67,8 +67,8 @@ struct strDateTime // declared in NTPtimeESP.h, which is included by including N
 };
 strDateTime ConvertUnixTimestamp( unsigned long );
 boolean daylightSavingTime(unsigned long );                     
-const char ssid[] = "dickoryParima";  //  your network SSID (name)
-const char pass[] = "GeorgeWashington";       // your network password
+const char ssid[] = "^^^^^^^^^^^^^^^^^^^^";  //  your network SSID (name)
+const char pass[] = "^^^^^^^^^^^^^^^^^^^";       // your network password
 //const int timeZone = 1;     // Central European Time
 //const int timeZone = -5;  // Eastern Standard Time (USA)
 //const int timeZone = -4;  // Eastern Daylight Time (USA)
@@ -76,7 +76,7 @@ const int timeZone = -8;  // Pacific Standard Time (USA)
 //const int timeZone = -7;  // Pacific Daylight Time (USA)
 unsigned long last_temp_time = 0;
 // NTP Servers:
-IPAddress timeServer(192, 168, 1, 216); // 
+IPAddress timeServer(192, 168, 1, 216); // ^
 //  IPAddress timeServer(132, 163, 4, 101); // time-a.timefreq.bldrdoc.gov
 // IPAddress timeServer(132, 163, 4, 102); // time-b.timefreq.bldrdoc.gov
 // IPAddress timeServer(132, 163, 4, 103); // time-c.timefreq.bldrdoc.gov
@@ -132,8 +132,8 @@ char* sought = "KLGB";
 
 int Get_temperature()
 {
-  const char* host = "tgftp.nws.noaa.gov";
-  const char* streamId   = "/data/observations/metar/stations/";
+  const char* host = "tgftp.nws.noaa.gov"; // ^
+  const char* streamId   = "/data/observations/metar/stations/"; // ^
   const char* privateKey = "";
   Serial.print("Last  temperature reading time ");
   Serial.println(last_reading_time);  //unix time
